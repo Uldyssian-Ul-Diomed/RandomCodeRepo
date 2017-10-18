@@ -1,0 +1,25 @@
+package test;
+
+/**
+ *
+ * @author Uldyssian
+ */
+public class Palindrome {
+
+    public static void main(String[] args) {
+
+        System.out.println(isPalindrome("AnacondaadnoCana"));
+    }
+
+    public static boolean isPalindrome(String str) {
+        str = str.toLowerCase();
+        char[] s = str.toCharArray();
+        for (int i = 0; i < s.length / 2; i++) {
+            if (s[i] == s[(s.length - i - 1)]) {
+            } else {
+                return false;
+            }
+        }
+        return true;
+    }
+}
